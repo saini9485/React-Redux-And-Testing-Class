@@ -1,21 +1,21 @@
-import { type } from "@testing-library/user-event/dist/type"
-import {createStore} from "redux"
+import { createStore } from "redux";
 
 const DEFAULT_STATE = {
-    counter:7,
-    name:"Rajesh",
-    age:22
-}
+  counter: 7,
+  name: "Rajesh",
+  age: 22,
+};
 
-const reducerCounter = (state =DEFAULT_STATE,  action) =>{
-if(action.type == "increment"){
-    return {...state, counter:state.counter+1}
-}
-return state;
-}
+const reducerCounter = (state = DEFAULT_STATE, action) => {
+  if (action.type == "increment") {
+    return { ...state, counter: state.counter + 1 };
+  }
+  if (action.type == "decrement") {
+    return { ...state, counter: state.counter - 1 };
+  }
+  return state;
+};
 
+const store = createStore(reducerCounter);
 
-
-const store = createStore(reducerCounter)
-
-export default store
+export default store;
