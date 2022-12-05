@@ -8,7 +8,7 @@ const DEFAULT_STATE = {
 
 const reducerCounter = (state = DEFAULT_STATE, action) => {
   if (action.type == "increment") {
-    return { ...state, counter: state.counter + 1 };
+    return { ...state, counter: state.counter + 5 };
   }
   if (action.type == "decrement") {
     return { ...state, counter: state.counter - 4 };
