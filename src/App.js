@@ -1,12 +1,18 @@
-// import { Counter } from "./components/reduxClasses/Counter";
 
-import { Counter } from "./components/reduxClasses/counter/Counter";
+// import { Counter } from "./components/reduxClasses/counter/Counter";
+import { Dashboard } from "./components/reduxClasses/reduxAuth/Dashboard";
+import { Home } from "./components/reduxClasses/reduxAuth/Home";
+import { LoginForm } from "./components/reduxClasses/reduxAuth/LoginForm";
+
 
 function App() {
   return (
     <div>
-      {/* <Counter /> */}
-      <Counter/>
+
+      {/* <Counter/> */}
+      <Dashboard />
+      <Home />
+    <LoginForm/>
     </div>
   );
 }
