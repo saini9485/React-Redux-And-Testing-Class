@@ -1,16 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import "./Counter.css";
+import "./Counter.css"
 
 export function Counter() {
-  
-  const dispatch = useDispatch() 
+  const dispatch = useDispatch();
 
-    const counter = useSelector((state) => {
-      return state.counter;
-    });
- 
+  const counter = useSelector((state) => {
+    return state.counter;
+  });
 
   const handleIncrement = () => {
     dispatch({ type: "increment" });
