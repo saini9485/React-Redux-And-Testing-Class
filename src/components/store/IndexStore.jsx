@@ -11,7 +11,7 @@ const reducerCounter = (state = DEFAULT_STATE, action) => {
     return { ...state, counter: state.counter + 5 };
   }
   if (action.type == "decrement") {
-    return { ...state, counter: state.counter - 4 };
+    return { ...state, counter: state.counter - 5 };
   }
   return state;
 };
