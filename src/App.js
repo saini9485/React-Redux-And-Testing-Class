@@ -15,11 +15,12 @@ function App() {
 
       {/* <Counter/> */}
       {
-        loggedInUser? ( <Dashboard />):
-        <>
-         (   <Home />
+        loggedInUser? (<> <Dashboard />
+        <Home />
+         </>):
+         (   
     <LoginForm/>)
-        </>
+       
        
       }
      
