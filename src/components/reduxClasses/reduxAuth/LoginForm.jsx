@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import usersData from "../../database/allUsers";
+import {allUsers }from "../../database/allUsers";
 
 export const LoginForm = () => {
   const [loginData, setLoginData] = useState({});
@@ -9,7 +9,7 @@ export const LoginForm = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    let result = usersData.allUsers.filter((user) => {
+    let result = allUsers.filter((user) => {
       return (
         user.email === loginData.email && user.password === loginData.password
       );

@@ -9,7 +9,7 @@ export const allUsers = [
 
 
 
-export default {
-    "allUsers": allUsers,
+// export default {
+//     "allUsers": allUsers,
 
-}
+// }
