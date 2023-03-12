@@ -51,7 +51,7 @@ export const LoginForm = () => {
           }
         />
         <br />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Passwords</label>
         <input
           type="password"
           name="password"
